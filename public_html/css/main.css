@@ -1,0 +1,106 @@
+html, body { /*main style*/
+	font-family: 'Orbitron', sans-serif;
+	text-shadow:0px 0px 5px black;
+	color: white;
+	font-size: 15pt;
+	background-color: dimgray;
+	background-image:linear-gradient(0deg, #A8A8A8 0%, transparent 25%, transparent 25%, #A8A8A8 100%);
+	margin: 0;
+	height: 100%;
+}
+header { /*style for the header*/
+	font-family: 'Orbitron', sans-serif;
+	text-shadow:0px 0px 5px #3CC;
+	text-align: center;
+	padding: 5%;
+	background-color: #222;
+	background-image:repeating-linear-gradient(45deg, #444 25%, transparent 75%, transparent 75%, #444 75%);
+	margin: 0 auto;
+
+}
+.header-main-text { /*Main header text*/
+	width: 80%;
+	animation: pulsate-out 15s infinite;
+}
+.header-sub-text { /*header subtext*/
+	width: 60%;
+	text-align: right;
+	animation: pulsate-out 15s infinite;
+}
+@keyframes pulsate-out{ /*animation for header text*/
+	0% {
+		color: #3CC;
+		text-shadow:0px 0px 5px white;
+	}
+	50% {
+		color: white;
+		text-shadow:0px 0px 5px #3CC;
+	}
+	100% {
+		color: #3CC;
+		text-shadow:0px 0px 5px white;
+	}
+}
+h1, h2, h3, h4 {
+	transition-duration: 500ms;
+}
+h1:hover, h1:focus, h1:active {
+	cursor: pointer;
+	color: #3CC;
+	transition-duration: 500ms;
+}
+p{ /*paragraphs*/
+	transition-duration: 500ms;
+}
+p:hover, p:focus, p:active { /*p hover effects*/
+	color: #3CC;
+	transition-duration: 500ms;
+}
+section { /*for sections*/
+	width: 100%;
+	text-align: left;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+ul { /*unordered list*/
+	text-align: left;
+	transition-duration: 500ms;
+}
+ul:hover, ul:focus, ul:active { /*ul hover effects*/
+	color: #3CC;
+	transition-duration: 500ms;
+}
+ol:hover, ul:focus, ul:active  { /*ol hover effects*/
+	color: #3CC;
+	transition-duration: 500ms;
+}
+tr { /*table rows*/
+	text-align: left;
+}
+table { /*tables*/
+	transition-duration: 500ms;
+}
+.image-holder {
+	transition-duration: 500ms;
+}
+.image-holder:hover, .image-holder:focus, .image-holder:active { /*hover effect for image*/
+	filter: invert(100%);
+	transition-duration: 500ms;
+}
+@keyframes fadeDown { /*animation for opening details*/
+	0% {
+		opacity: 0;
+		transform: translateY(-1.25em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+details[open] { /*open details*/
+	animation-name: fadeDown;
+	animation-duration: 1s;
+}
+#thing {
+	display: none;
+}
