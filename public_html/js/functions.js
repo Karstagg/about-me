@@ -110,3 +110,4 @@ function dateFormat() {
 	//concatinates the newley formated date
 	document.write(day + ", " + month +" "+ theDate +", "+ year);
 };
+

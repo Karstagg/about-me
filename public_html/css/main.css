@@ -57,7 +57,6 @@ p:hover, p:focus, p:active { /*p hover effects*/
 	transition-duration: 500ms;
 }
 section { /*for sections*/
-	width: 100%;
 	text-align: left;
 	margin: 0 auto;
 	padding-top: 50px;
@@ -81,12 +80,10 @@ table { /*tables*/
 	transition-duration: 500ms;
 }
 .image-holder {
+	width: 80%;
 	transition-duration: 500ms;
 }
-.image-holder:hover, .image-holder:focus, .image-holder:active { /*hover effect for image*/
-	filter: invert(100%);
-	transition-duration: 500ms;
-}
+
 @keyframes fadeDown { /*animation for opening details*/
 	0% {
 		opacity: 0;
@@ -101,6 +98,21 @@ details[open] { /*open details*/
 	animation-name: fadeDown;
 	animation-duration: 1s;
 }
-#thing {
+#about {
 	display: none;
+}
+.flexbox { /*contains sections*/
+	display: flex;
+	background-color: #222;
+	background-image:linear-gradient(0deg, #444 25%, transparent 75%, transparent 75%, #444 75%);
+	align-content: center;
+}
+#include{
+	padding-top: 30px;
+	margin: auto;
+	width: 50%;
+	text-align: left;
+}
+.includer:hover {
+	cursor: pointer;
 }

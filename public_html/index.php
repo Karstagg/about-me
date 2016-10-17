@@ -18,10 +18,26 @@
 
 			$( document ).ready(function() {
 				$("#aboutMe").click(function() {
-					$("#thing").slideToggle(function() {
+					$("#about").slideToggle(function() {
 						// Animation complete.
 					});
 				});
+
+				$("#contactMe").click(function() {
+					$("#contact").slideToggle(function() {
+						// Animation complete.
+					});
+				});
+				$("#mf").click(function() {
+					$("#about").slideToggle(function() {
+					});
+					$("#include").load("includes/about.php #aboutP");
+				})
+				$("#photos").click(function() {
+					$("#about").slideToggle(function() {
+					});
+					$("#include").load("includes/about.php #images");
+				})
 			});
 
 
@@ -52,66 +68,33 @@
 		<!-- the header -->
 		<header>
 			<div class="header-main-text">
-				<h1><script>dateFormat()</script></h1>
+				<h1>Matt's Page</h1>
 			</div>
 			<div class="header-sub-text">
-				<h4>For Wanikani profile and radicals</h4>
+				<h4><script>dateFormat()</script></h4>
 			</div>
 		</header>
 		<!--main content-->
 		<main>
 			<!--begin section 1 (persona section)-->
-			<section>
-				<h1 id="aboutMe">About me</h1>
-				<div id="thing">
-					<p>yo!</p>
-				</div>
-			</section>
-			<section>
-				<h2>Use Case and Interaction Flow</h2>
-				<details>
-					<summary></summary>
-					<h3>Use Case</h3>
-					<p>John Meerschwein just got home from work. He's exhausted and slightly annoyed from working with children all evening, he just wants to relax. However, John is also annoyed that he got lost on his way home again due to his inability to read Kanji. John decides enough is enough, he needs to learn Kanji. Being about as motivated to do anything as John ever has been in his whole life, he searches for "Learn kanji easily" on his PC. He finds wanikani, which starts creates and manages flash cards for you, starting with kanji radicals.</p>
-					<h3>Interaction Flow</h3>
-					<ol>
-						<li>John creates an account and logs in on his favorite web browser on his PC</li>
-						<li>John clicks on the "lessons" button and reads through the new items he needs to memorize</li>
-						<li>John takes the quiz for the items he just read through</li>
-						<li>John logs out for the night</li>
-						<li>The next day after work, John logs back in an reviews the items he learned yesterday</li>
-						<li>John logs out again for the night</li>
-					</ol>
-				</details>
-			</section>
-			<section>
-				<h2>Entities and Attributes</h2>
-				<details>
-					<summary></summary>
-					<ul>Radicals *Strong*
-						<li>radicalId (PRIMARY_KEY AUTO_INCREMENT)</li>
-						<li>radical</li>
-						<li>radicalLevel</li>
-						<li>radicalCorrectThreshold</li>
-					</ul>
-					<ul>Profile *Strong*
-						<li>userId (PRIMARY_KEY AUTO_INCREMENT)</li>
-						<li>userName</li>
-						<li>userEmail</li>
-						<li>userLevel</li>
-					</ul>
-					<ul>Attempts *Weak*
-						<li>attemptsUserId (FOREIGN_KEY)</li>
-						<li>attemptsRadicalId (FOREIGN_KEY)</li>
-						<li>attemptsIsCorrect</li>
-						<li>attemptsTimeTested</li>
-					</ul>
-					<br>
-					<div class="image-holder">
-						<img src="img/wanikaniErd.svg" alt="Wanikani ERD">
+			<div class="flexbox">
+				<section>
+					<h1 id="aboutMe">About me</h1>
+					<div id="about">
+						<p id="mf" class="includer">Matt Fisher</p>
+						<p id="photos" class="includer">Photos</p>
 					</div>
-				</details>
-			</section>
+				</section>
+				<section>
+					<h1 id="contactMe">contact</h1>
+					<div id="contact">
+
+					</div>
+				</section>
+			</div>
+			<div id="include">
+
+			</div>
 		</main>
 
 	</body>
