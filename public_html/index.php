@@ -17,26 +17,30 @@
 		<script>
 
 			$( document ).ready(function() {
-				$("#aboutMe").click(function() {
-					$("#about").slideToggle(function() {
+				$("#aboutMe").mouseover(function() {
+					$("#about").fadeToggle(function() {
 						// Animation complete.
 					});
 				});
-
-				$("#contactMe").click(function() {
-					$("#contact").slideToggle(function() {
+				$("#contactMe").mouseover(function() {
+					$("#contact").fadeToggle(function() {
 						// Animation complete.
 					});
 				});
 				$("#mf").click(function() {
-					$("#about").slideToggle(function() {
+					$("#about").fadeToggle(function() {
 					});
 					$("#include").load("includes/about.php #aboutP");
 				})
 				$("#photos").click(function() {
-					$("#about").slideToggle(function() {
+					$("#about").fadeToggle(function() {
 					});
 					$("#include").load("includes/about.php #images");
+				})
+				$("#contactInfo").click(function() {
+					$("#contact").fadeToggle(function() {
+					});
+					$("#include").load("includes/about.php #contactList");
 				})
 			});
 
@@ -62,7 +66,7 @@
 		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 
-		<title>Data Design for Wanikani Radicals</title>
+		<title>Personal Page</title>
 	</head>
 	<body>
 		<!-- the header -->
@@ -88,7 +92,8 @@
 				<section>
 					<h1 id="contactMe">contact</h1>
 					<div id="contact">
-
+						<p id="contactInfo" class="includer">Contact Info</p>
+						<a href="img/resume_8.7.pdf" download>Download my Resume</a>
 					</div>
 				</section>
 			</div>

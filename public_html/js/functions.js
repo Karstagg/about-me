@@ -89,12 +89,22 @@ function dateFormat() {
 	}
 	//if the last character in the date is a 2
 	else if(dayOfMonth.slice(-1) == 2) {
-		var theDate = dayOfMonth + "nd";
+		if(dayOfMonth != 12) {
+			var theDate = dayOfMonth + "nd";
+		}
+		else {
+			var theDate = dayOfMonth + "th";
+		}
 	}
 	else {
 		//if the last character in the date is a 3
 		if(dayOfMonth.slice(-1) == 3) {
-			var theDate = dayOfMonth + "rd";
+			if(dayOfMonth != 13) {
+				var theDate = dayOfMonth + "rd";
+			}
+			else {
+				var theDate = dayOfMonth + "th";
+			}
 		}
 		else {
 			var theDate = dayOfMonth + "th";

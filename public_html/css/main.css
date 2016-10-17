@@ -4,6 +4,7 @@ html, body { /*main style*/
 	color: white;
 	font-size: 15pt;
 	background-color: dimgray;
+	text-decoration: none;
 	background-image:linear-gradient(0deg, #A8A8A8 0%, transparent 25%, transparent 25%, #A8A8A8 100%);
 	margin: 0;
 	height: 100%;
@@ -16,7 +17,6 @@ header { /*style for the header*/
 	background-color: #222;
 	background-image:repeating-linear-gradient(45deg, #444 25%, transparent 75%, transparent 75%, #444 75%);
 	margin: 0 auto;
-
 }
 .header-main-text { /*Main header text*/
 	width: 80%;
@@ -80,7 +80,7 @@ table { /*tables*/
 	transition-duration: 500ms;
 }
 .image-holder {
-	width: 80%;
+	width: 30%;
 	transition-duration: 500ms;
 }
 
@@ -101,11 +101,15 @@ details[open] { /*open details*/
 #about {
 	display: none;
 }
+#contact {
+	display: none;
+}
 .flexbox { /*contains sections*/
 	display: flex;
 	background-color: #222;
 	background-image:linear-gradient(0deg, #444 25%, transparent 75%, transparent 75%, #444 75%);
 	align-content: center;
+	height: 220px;
 }
 #include{
 	padding-top: 30px;
@@ -115,4 +119,10 @@ details[open] { /*open details*/
 }
 .includer:hover {
 	cursor: pointer;
+}
+a:link {
+	color: white;
+}
+a:hover {
+	color: #33C;
 }
