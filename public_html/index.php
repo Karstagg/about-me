@@ -12,37 +12,14 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/main.css" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script src="js/functions.js"></script>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script>
 
-			$( document ).ready(function() {
-				$("#aboutMe").mouseover(function() {
-					$("#about").fadeToggle(function() {
-						// Animation complete.
-					});
-				});
-				$("#contactMe").mouseover(function() {
-					$("#contact").fadeToggle(function() {
-						// Animation complete.
-					});
-				});
-				$("#mf").click(function() {
-					$("#about").fadeToggle(function() {
-					});
-					$("#include").load("includes/about.php #aboutP");
-				})
-				$("#photos").click(function() {
-					$("#about").fadeToggle(function() {
-					});
-					$("#include").load("includes/about.php #images");
-				})
-				$("#contactInfo").click(function() {
-					$("#contact").fadeToggle(function() {
-					});
-					$("#include").load("includes/about.php #contactList");
-				})
-			});
 
 
 		</script>
@@ -83,23 +60,24 @@
 			<!--begin section 1 (persona section)-->
 			<div class="flexbox">
 				<section>
-					<h1 id="aboutMe">About me</h1>
+					<h2 id="aboutMe">About me</h2>
 					<div id="about">
 						<p id="mf" class="includer">Matt Fisher</p>
 						<p id="photos" class="includer">Photos</p>
 					</div>
 				</section>
 				<section>
-					<h1 id="contactMe">contact</h1>
+					<h2 id="contactMe">contact</h2>
 					<div id="contact">
-						<p id="contactInfo" class="includer">Contact Info</p>
-						<a href="img/resume_8.7.pdf" download>Download my Resume</a>
+						<p id="contactInfo" class="includer">My Info</p>
+						<a href="img/resume_8.7.pdf" download>Resume</a>
 					</div>
 				</section>
 			</div>
 			<div id="include">
 
 			</div>
+
 		</main>
 
 	</body>

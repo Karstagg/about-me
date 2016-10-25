@@ -121,3 +121,51 @@ function dateFormat() {
 	document.write(day + ", " + month +" "+ theDate +", "+ year);
 };
 
+$( document ).ready(function() {
+	$("#aboutMe").click(function() {
+		$("#about").fadeToggle(function() {
+		});
+	});
+	$("#contactMe").click(function() {
+		$("#contact").fadeToggle(function() {
+		});
+	});
+	$("#mf").click(function() {
+		$("#about").fadeToggle(function() {
+		});
+		$("#include").fadeOut('slow', function() {
+			$("#include").load("includes/about.php #aboutP", function() {
+				$('#include').fadeIn('slow');
+			});
+		});
+	})
+	$("#photos").click(function() {
+		$("#about").fadeToggle(function() {
+		});
+		$("#include").fadeOut('slow', function() {
+			$("#include").load("includes/about.php #slider1", function() {
+				$('#include').fadeIn('slow');
+				$('.slider').slick({
+
+					slidesToShow: 1
+
+				});
+			});
+		});
+	})
+	$("#contactInfo").click(function() {
+		$("#contact").fadeToggle(function() {
+		});
+		$("#include").fadeOut('slow', function() {
+			$("#include").load("includes/about.php #contactList", function() {
+				$('#include').fadeIn('slow');
+			});
+		});
+	})
+
+
+
+
+
+
+});

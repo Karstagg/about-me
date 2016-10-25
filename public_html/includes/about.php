@@ -8,8 +8,15 @@
  ?>
 <!DOCTYPE html>
 <html lang="en">
-	<head>
 
+	<head>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../slick/slick.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="../js/functions.js"></script>
 	</head>
 	<body>
 		<!--main content-->
@@ -21,8 +28,14 @@
 					<li>Phone: 505-555-5555</li>
 				</ul>
 			</div>
+			<div class="slider" id="slider1">
+				<div class="slick-div"><img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
+				<div class="slick-div"><img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
+				<div class="slick-div"><img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
+			</div>
+
 			<div id="images"class="image-holder">
-				<img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone">
+
 			</div>
 		</main>
 
