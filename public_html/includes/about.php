@@ -49,7 +49,7 @@
 				</div>
 			</div>
 			<div id="images"class="image-holder">
-				<p>ugh</p>
+				<p>ugdfsdfh</p>
 			</div>
 		</main>
 
