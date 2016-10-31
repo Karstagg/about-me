@@ -143,12 +143,23 @@ $( document ).ready(function() {
 		$("#about").fadeToggle(function() {
 		});
 		$("#include").fadeOut('slow', function() {
-			$("#include").load("includes/about.php #slider1", function() {
+			$("#include").load("includes/about.php #slider-div", function() {
 				$('#include').fadeIn('slow');
 				$('.slider').slick({
-
-					slidesToShow: 1
-
+					mobileFirst: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					fade: true,
+					swipeToSlide: true
+				});
+				$('.slider-nav').slick({
+					mobileFirst: true,
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					asNavFor: '.slider',
+					dots: false,
+					focusOnSelect: true
 				});
 			});
 		});
@@ -163,9 +174,5 @@ $( document ).ready(function() {
 		});
 	})
 
-
-
-
-
-
 });
+

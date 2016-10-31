@@ -1,17 +1,21 @@
-html, body { /*main style*/
+/********************************************************************
+	main page css
+********************************************************************/
+
+html, body { /*global body style*/
 	font-family: 'Orbitron', sans-serif;
-	text-shadow:0em 0em 0.25em black;
+	text-shadow:0rem 0rem 0.25rem black;
 	color: white;
-	font-size: 1em;
+	font-size: 1rem;
 	background-color: dimgray;
 	text-decoration: none;
 	background-image:linear-gradient(0deg, #A8A8A8 0%, transparent 25%, transparent 25%, #A8A8A8 100%);
 	margin: 0;
-	height: 100em;
+	height: 100%;
 }
 header { /*style for the header*/
 	font-family: 'Orbitron', sans-serif;
-	text-shadow:0em 0em 0.25em #3CC;
+	text-shadow:0rem 0rem 0.25rem #3CC;
 	text-align: center;
 	padding: 5%;
 	background-color: #222;
@@ -30,15 +34,15 @@ header { /*style for the header*/
 @keyframes pulsate-out{ /*animation for header text*/
 	0% {
 		color: #3CC;
-		text-shadow:0em 0em 0.25em white;
+		text-shadow:0rem 0rem 0.25rem white;
 	}
 	50% {
 		color: white;
-		text-shadow:0em 0em 0.25em #3CC;
+		text-shadow:0rem 0rem 0.25rem #3CC;
 	}
 	100% {
 		color: #3CC;
-		text-shadow:0em 0em 0.25em white;
+		text-shadow:0rem 0rem 0.25rem white;
 	}
 }
 h1, h2, h3, h4 {
@@ -59,7 +63,7 @@ p:hover, p:focus, p:active { /*p hover effects*/
 section { /*for sections*/
 	text-align: left;
 	margin: 0 auto;
-	padding-top: 5em;
+	padding-top: 5rem;
 }
 
 ul:hover, ul:focus, ul:active { /*ul hover effects*/
@@ -85,7 +89,7 @@ table { /*tables*/
 @keyframes fadeDown { /*animation for opening details*/
 	0% {
 		opacity: 0;
-		transform: translateY(-1.25em);
+		transform: translateY(-1.25rem);
 	}
 	100% {
 		opacity: 1;
@@ -107,12 +111,12 @@ details[open] { /*open details*/
 	background-color: #222;
 	background-image:linear-gradient(0deg, #444 25%, transparent 75%, transparent 75%, #444 75%);
 	align-content: center;
-	height: 15em;
+	height: 15rem;
 }
 #include{
-	padding-top: 1em;
+	padding-top: 1rem;
 	margin: auto;
-	width: 35%;
+	width: 50%;
 	text-align: center;
 }
 .includer:hover {
@@ -127,6 +131,41 @@ a:hover {
 	color: #33C;
 }
 img {
-	width: 100%;
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+.nav-img {
+	height: 7rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+/********************************************************************
+	slider
+********************************************************************/
+.slider-nav{
+	margin-top: 5rem;
+}
+.slider {
+	margin-top: 5rem;
+}
 
+/********************************************************************
+	footer
+********************************************************************/
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -3rem;
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.site-footer, .page-wrap:after {
+	height: 3rem;
+}
+.site-footer {
+	background: #3CC;
+	text-align: center;
 }

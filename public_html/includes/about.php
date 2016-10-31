@@ -28,12 +28,26 @@
 					<li>Phone: 505-555-5555</li>
 				</ul>
 			</div>
-			<div class="slider" id="slider1">
-				<div class="slick-div"><img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
-				<div class="slick-div"><img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
-				<div class="slick-div"><img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
+			<div id="slider-div">
+				<div class="slider-nav" id="slider-nav1">
+					<div class="slick-div"><img class="nav-img" src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
+					<div class="slick-div"><img class="nav-img" src="../public_html/img/fuji.jpg" alt="mt. fuji"  ></div>
+					<div class="slick-div"><img class="nav-img" src="../public_html/img/fushimi.jpg" alt="fushimi inari"  ></div>
+					<div class="slick-div"><img class="nav-img" src="../public_html/img/kyoto.jpg" alt="kyoto"  ></div>
+					<div class="slick-div"><img class="nav-img" src="../public_html/img/jyogosaki.jpg" alt="jyogosaki coast"  ></div>
+					<div class="slick-div"><img class="nav-img" src="../public_html/img/okinawa.jpg" alt="okinawa"  ></div>
+					<div class="slick-div"><img class="nav-img" src="../public_html/img/dancinghouse.jpg" alt="dancing house"  ></div>
+				</div>
+				<div class="slider" id="slider1">
+					<div class="slick-div"><img src="../public_html/img/hakone.jpg" alt="My girlfriend and I at Mt.Hakone"  ></div>
+					<div class="slick-div"><img src="../public_html/img/fuji.jpg" alt="mt. fuji"  ></div>
+					<div class="slick-div"><img src="../public_html/img/fushimi.jpg" alt="fushimi inari"  ></div>
+					<div class="slick-div"><img src="../public_html/img/kyoto.jpg" alt="kyoto"  ></div>
+					<div class="slick-div"><img src="../public_html/img/jyogosaki.jpg" alt="jyogosaki coast"  ></div>
+					<div class="slick-div"><img src="../public_html/img/okinawa.jpg" alt="okinawa"  ></div>
+					<div class="slick-div"><img src="../public_html/img/dancinghouse.jpg" alt="dancing house"  ></div>
+				</div>
 			</div>
-
 			<div id="images"class="image-holder">
 
 			</div>

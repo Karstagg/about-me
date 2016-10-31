@@ -56,7 +56,7 @@
 			</div>
 		</header>
 		<!--main content-->
-		<main>
+		<main class="page-wrap">
 			<!--begin section 1 (persona section)-->
 			<div class="flexbox">
 				<section>
@@ -79,6 +79,9 @@
 			</div>
 
 		</main>
+		<footer class="site-footer">
+			&copy;Matt Fisher 2016.
+		</footer>
 
 	</body>
 </html>
